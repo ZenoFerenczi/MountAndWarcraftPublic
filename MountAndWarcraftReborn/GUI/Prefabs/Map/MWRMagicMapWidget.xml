@@ -1,0 +1,63 @@
+<Prefab>
+  <Window>
+    <Widget WidthSizePolicy="Fixed"
+            HeightSizePolicy="Fixed"
+            SuggestedWidth="220"
+            SuggestedHeight="110"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            MarginTop="140"
+            MarginRight="20"
+            IsVisible="@IsVisible">
+      <Children>
+        <Widget WidthSizePolicy="StretchToParent"
+                HeightSizePolicy="StretchToParent"
+                Sprite="BlankWhiteSquare_9"
+                Color="#AA101820">
+          <Children>
+            <RichTextWidget WidthSizePolicy="CoverChildren"
+                            HeightSizePolicy="CoverChildren"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Top"
+                            MarginTop="10"
+                            Brush.FontSize="22"
+                            Text="Magic" />
+            <RichTextWidget WidthSizePolicy="CoverChildren"
+                            HeightSizePolicy="CoverChildren"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            PositionYOffset="-8"
+                            Brush.FontSize="20"
+                            Text="@ClassText" />
+            <RichTextWidget WidthSizePolicy="CoverChildren"
+                            HeightSizePolicy="CoverChildren"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            PositionYOffset="16"
+                            Brush.FontSize="18"
+                            Text="@ManaText" />
+            <ButtonWidget WidthSizePolicy="Fixed"
+                          HeightSizePolicy="Fixed"
+                          SuggestedWidth="170"
+                          SuggestedHeight="28"
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Bottom"
+                          MarginBottom="10"
+                          Command.Click="ExecuteOpenSpellBook"
+                          Sprite="BlankWhiteSquare_9"
+                          Color="#FF38536B">
+              <Children>
+                <RichTextWidget WidthSizePolicy="CoverChildren"
+                                HeightSizePolicy="CoverChildren"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Brush.FontSize="16"
+                                Text="Open Spellbook" />
+              </Children>
+            </ButtonWidget>
+          </Children>
+        </Widget>
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

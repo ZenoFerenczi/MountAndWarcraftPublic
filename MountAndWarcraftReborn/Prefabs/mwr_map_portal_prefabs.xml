@@ -1,0 +1,47 @@
+<prefabs>
+	<game_entity name="mwr_dark_portal_map" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="mwr_dark_portal_mesh" old_prefab_name="">
+				<transform position="0.000, 0.000, 0.0" rotation_euler="0.000, 0.000, 0.000" scale="1.0, 1.0, 1.0"/>
+				<components>
+					<meta_mesh_component name="dark_portal"/>
+				</components>
+			</game_entity>
+			<game_entity name="mwr_dark_portal_click" old_prefab_name="">
+				<tags>
+					<tag name="bo_town"/>
+				</tags>
+				<transform position="0.000, 0.000, 1.250" rotation_euler="0.000, 0.000, 0.000" scale="1.0, 1.0, 1.0"/>
+				<physics shape="bo_sphere_collider">
+					<body_flags>
+						<body_flag name="only_collide_with_raycast"/>
+					</body_flags>
+				</physics>
+			</game_entity>
+		</children>
+	</game_entity>
+
+  <game_entity name="ice_crown_citadel" old_prefab_name="">
+    <transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+    <children>
+      <game_entity name="ice_crown_citadel" old_prefab_name="">
+        <transform position="0.000, 0.000, 0.0" rotation_euler="0.000, 0.000, 0.000" scale="1.585, 1.585, 1.585"/>
+        <components>
+          <meta_mesh_component name="ice_crown_citadel"/>
+        </components>
+      </game_entity>
+      <game_entity name="mwr_dark_portal_click" old_prefab_name="">
+        <tags>
+          <tag name="bo_town"/>
+        </tags>
+        <transform position="0.000, 0.000, 1.250" rotation_euler="0.000, 0.000, 0.000" scale="1.0, 1.0, 1.0"/>
+        <physics shape="bo_sphere_collider">
+          <body_flags>
+            <body_flag name="only_collide_with_raycast"/>
+          </body_flags>
+        </physics>
+      </game_entity>
+    </children>
+  </game_entity>
+</prefabs>

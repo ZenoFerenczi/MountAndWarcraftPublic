@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="module_sound">
+  <module_sounds>
+    <module_sound
+      name="mwr/battle_result/orc/victory"
+      is_2d="true"
+      sound_category="music"
+      path="Music/BattleResults/orc_victory.wav" />
+    <module_sound
+      name="mwr/battle_result/orc/defeat"
+      is_2d="true"
+      sound_category="music"
+      path="Music/BattleResults/orc_defeat.wav" />
+  </module_sounds>
+</base>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settlements>
+  <Settlement id="mwr_portal_site_01" name="Fel Rift" owner="Faction.clan_nord_1" posX="587.381" posY="320.356" culture="Culture.nord" text="A jagged fel breach tears through the cold sky above this unholy portal." gate_posX="587.381" gate_posY="320.356">
+    <Components>
+      <CustomSettlementComponent
+        id="mwr_portal_site_01"
+        component_name="PortalSite"
+        background_crop_position="0.0"
+        background_mesh="wait_empire_village"
+        wait_mesh="wait_empire_village"
+        portal_prefab="mwr_dark_portal_map"
+        portal_visual_scale="0.085"
+        portal_visual_z_offset="0.15"
+        encounter_distance="3.5"
+        battle_scene="nord_battle_terrain_a"
+        battle_party_size="400"
+        min_roaming_party_size="70"
+        max_roaming_party_size="140"
+        spawn_template="raiding_party_burning_legion_template"
+        battle_spawn_template="portal_defender_party_burning_legion_template"
+        spawn_clan="clan_nord_1"
+        reward_items="Frostmourne;Helm_Of_Domination;Lich_King_Armor;dk_helm;dk_chestplate;dk_shoulder" />
+    </Components>
+  </Settlement>
+  <Settlement id="mwr_portal_site_02" name="Shadow Breach" owner="Faction.clan_nord_2" posX="637.18" posY="482.293" culture="Culture.nord" text="Dead winds gather around a silent rupture in the world." gate_posX="637.18" gate_posY="482.293">
+    <Components>
+      <CustomSettlementComponent
+        id="mwr_portal_site_02"
+        component_name="PortalSite"
+        background_crop_position="0.0"
+        background_mesh="wait_empire_village"
+        wait_mesh="wait_empire_village"
+        portal_prefab="mwr_dark_portal_map"
+        portal_visual_scale="0.085"
+        portal_visual_z_offset="0.15"
+        encounter_distance="3.5"
+        battle_scene="nord_battle_terrain_a"
+        battle_party_size="400"
+        min_roaming_party_size="70"
+        max_roaming_party_size="140"
+        spawn_template="raiding_party_burning_legion_template"
+        battle_spawn_template="portal_defender_party_burning_legion_template"
+        spawn_clan="clan_nord_2"
+        reward_items="dk_bracers;dk_boots;dk_skeleton;scourge_banshee;scourge_ghoul;scourge_dark_ranger" />
+    </Components>
+  </Settlement>
+  <Settlement id="mwr_portal_site_03" name="IceCrown Citadel" owner="Faction.clan_nord_3" posX="700.600" posY="858.200" culture="Culture.nord" text="A spreading tear of ice and shadow hangs over the tundra." gate_posX="700.600" gate_posY="858.200">
+    <Components>
+      <CustomSettlementComponent
+        id="mwr_portal_site_03"
+        component_name="PortalSite"
+        background_crop_position="0.0"
+        background_mesh="wait_empire_village"
+        wait_mesh="wait_empire_village"
+        portal_prefab="ice_crown_citadel"
+        portal_visual_scale="1.70"
+        portal_visual_z_offset="0.15"
+        encounter_distance="4.0"
+        battle_scene="nord_battle_terrain_a"
+        battle_party_size="400"
+        min_roaming_party_size="200"
+        max_roaming_party_size="400"
+        spawn_template="raiding_party_scourge_template"
+        battle_spawn_template="portal_defender_party_scourge_template"
+        spawn_clan="clan_nord_3"
+        reward_items="scourge_abomination;scourge_shade;scourge_lich;scourge_catapult;scourge_sylvanas;Lich_King_Silver_Vulfar_Edition" />
+    </Components>
+  </Settlement>
+  <Settlement id="mwr_portal_site_04" name=" Forge Camp Anger" owner="Faction.clan_nord_4" posX="731.111" posY="376.536" culture="Culture.nord" text="The ground itself seems dead where this portal claws at reality." gate_posX="731.111" gate_posY="376.536">
+    <Components>
+      <CustomSettlementComponent
+        id="mwr_portal_site_04"
+        component_name="PortalSite"
+        background_crop_position="0.0"
+        background_mesh="wait_empire_village"
+        wait_mesh="wait_empire_village"
+        portal_prefab="mwr_dark_portal_map"
+        portal_visual_scale="0.085"
+        portal_visual_z_offset="0.15"
+        encounter_distance="3.5"
+        battle_scene="nord_battle_terrain_a"
+        battle_party_size="400"
+        min_roaming_party_size="70"
+        max_roaming_party_size="140"
+        spawn_template="raiding_party_burning_legion_template"
+        battle_spawn_template="portal_defender_party_burning_legion_template"
+        spawn_clan="clan_nord_4"
+        reward_items="Helm_Of_Domination;Lich_King_Armor;dk_helm;dk_chestplate;scourge_lich;scourge_dark_ranger" />
+    </Components>
+  </Settlement>
+</Settlements>

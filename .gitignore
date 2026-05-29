@@ -1,0 +1,41 @@
+# Build output
+bin/
+obj/
+Debug/
+Release/
+*.dll
+*.pdb
+*.deps.json
+*.cache
+*.tmp
+
+# IDE/user state
+.vs/
+.vscode/
+*.user
+*.suo
+*.rsuser
+
+# Local/private workspace material
+.codex/
+.agents/
+References/
+SteamFolder/
+tmp_*/
+_spritegen_probe/
+WarsailsCode/
+MWRWarSailsCompat/
+steam_workshop_uploader.txt
+$p.bak_mwr
+
+# Packaged media/assets are intentionally not part of this public code repo.
+Assets/
+Music/
+Videos/
+
+# Local backups
+*.bak
+*.bak_*
+*.bak.*
+*.backup
+*.old

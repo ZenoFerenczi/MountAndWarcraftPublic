@@ -1,0 +1,147 @@
+<Prefab>
+  <Constants>
+    <Constant Name="RadialItem.Width" Value="86" />
+    <Constant Name="RadialItem.Height" Value="86" />
+    <Constant Name="RadialItem.Selected.Additive" Value="16" />
+    <Constant Name="RadialItem.Selected.Width" Additive="!RadialItem.Selected.Additive" Value="!RadialItem.Width" />
+    <Constant Name="RadialItem.Selected.Height" Additive="!RadialItem.Selected.Additive" Value="!RadialItem.Height" />
+  </Constants>
+  <VisualDefinitions>
+    <VisualDefinition Name="MWRMagicRadialItem" TransitionDuration="0.12">
+      <VisualState State="Default" SuggestedWidth="!RadialItem.Width" SuggestedHeight="!RadialItem.Height" />
+      <VisualState State="Hovered" SuggestedWidth="!RadialItem.Selected.Width" SuggestedHeight="!RadialItem.Selected.Height" />
+      <VisualState State="Pressed" SuggestedWidth="!RadialItem.Selected.Width" SuggestedHeight="!RadialItem.Selected.Height" />
+      <VisualState State="Selected" SuggestedWidth="!RadialItem.Selected.Width" SuggestedHeight="!RadialItem.Selected.Height" />
+      <VisualState State="Disabled" SuggestedWidth="!RadialItem.Width" SuggestedHeight="!RadialItem.Height" />
+    </VisualDefinition>
+  </VisualDefinitions>
+  <Window>
+    <Widget WidthSizePolicy="StretchToParent"
+            HeightSizePolicy="StretchToParent">
+      <Children>
+        <Widget WidthSizePolicy="Fixed"
+                HeightSizePolicy="Fixed"
+                SuggestedWidth="520"
+                SuggestedHeight="520"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                IsVisible="@IsVisible">
+          <Children>
+            <CircleActionSelectorWidget DataSource="{Items}"
+                                        WidthSizePolicy="Fixed"
+                                        HeightSizePolicy="Fixed"
+                                        SuggestedWidth="520"
+                                        SuggestedHeight="520"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        DistanceFromCenterModifier="180"
+                                        DirectionWidget="..\..\DirectionWidget"
+                                        ActivateOnlyWithController="false">
+              <ItemTemplate>
+                <MWRMagicRadialItemWidget WidthSizePolicy="Fixed"
+                                          HeightSizePolicy="Fixed"
+                                          SuggestedWidth="!RadialItem.Width"
+                                          SuggestedHeight="!RadialItem.Height"
+                                          VisualDefinition="MWRMagicRadialItem"
+                                          Command.Click="ExecuteSelect"
+                                          Sprite="BlankWhiteCircle"
+                                          Color="#F0263448">
+                  <Children>
+                    <RichTextWidget WidthSizePolicy="CoverChildren"
+                                    HeightSizePolicy="CoverChildren"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    Brush.FontSize="24"
+                                    Brush.FontColor="#FFF0C674"
+                                    Text="@Label" />
+                    <RichTextWidget WidthSizePolicy="CoverChildren"
+                                    HeightSizePolicy="CoverChildren"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Top"
+                                    MarginTop="10"
+                                    Brush.FontSize="11"
+                                    Brush.FontColor="#FFCAD4E5"
+                                    Text="@MetaText" />
+                    <RichTextWidget WidthSizePolicy="StretchToParent"
+                                    HeightSizePolicy="CoverChildren"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Bottom"
+                                    MarginLeft="10"
+                                    MarginRight="10"
+                                    MarginBottom="14"
+                                    Brush.FontSize="12"
+                                    Brush.FontColor="#FFF7F1E8"
+                                    Text="@ShortName"
+                                    IsVisible="@ShowShortName" />
+                  </Children>
+                </MWRMagicRadialItemWidget>
+              </ItemTemplate>
+            </CircleActionSelectorWidget>
+
+            <Widget WidthSizePolicy="Fixed"
+                    HeightSizePolicy="Fixed"
+                    SuggestedWidth="220"
+                    SuggestedHeight="220"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Sprite="BlankWhiteCircle"
+                    Color="#EE0C1017">
+              <Children>
+                <RichTextWidget WidthSizePolicy="StretchToParent"
+                                HeightSizePolicy="CoverChildren"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Top"
+                                MarginTop="38"
+                                MarginLeft="18"
+                                MarginRight="18"
+                                Brush.FontSize="23"
+                                Brush.FontColor="#FFF4C15D"
+                                Text="@CurrentSpellName" />
+                <RichTextWidget WidthSizePolicy="StretchToParent"
+                                HeightSizePolicy="CoverChildren"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                MarginLeft="18"
+                                MarginRight="18"
+                                Brush.FontSize="14"
+                                Brush.FontColor="#FFD0D7E3"
+                                Text="@CurrentSpellMeta" />
+                <RichTextWidget WidthSizePolicy="StretchToParent"
+                                HeightSizePolicy="CoverChildren"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Bottom"
+                                MarginLeft="20"
+                                MarginRight="20"
+                                MarginBottom="40"
+                                Brush.FontSize="13"
+                                Brush.FontColor="#FFD7DDE9"
+                                Text="@CurrentSpellDescription" />
+              </Children>
+            </Widget>
+          </Children>
+        </Widget>
+
+        <Widget Id="DirectionWidget"
+                WidthSizePolicy="Fixed"
+                HeightSizePolicy="Fixed"
+                SuggestedWidth="12"
+                SuggestedHeight="12"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Sprite="BlankWhiteCircle"
+                Color="#CCF0C674" />
+
+        <RichTextWidget WidthSizePolicy="StretchToParent"
+                        HeightSizePolicy="Fixed"
+                        SuggestedHeight="28"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Bottom"
+                        MarginBottom="110"
+                        Brush.FontSize="18"
+                        Brush.FontColor="#FFF1E6C8"
+                        Text="@StateText"
+                        IsVisible="@IsVisible" />
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

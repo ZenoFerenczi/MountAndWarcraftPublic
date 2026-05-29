@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MagicAssignments>
+  <Assignment character_id="dalaran_mage" class="Mage" />
+  <Assignment character_id="lord_1_7" class="Mage" />
+  <Assignment character_id="lord_1_40" class="Mage" />
+  <Assignment character_id="lord_1_45" class="Mage" />
+
+  <Assignment character_id="kaldorei_priestess_of_elune" class="Priest" />
+  <Assignment character_id="amani_ulatek_high_priest" class="Priest" />
+  <Assignment character_id="drakkari_shadow_priest" class="Priest" />
+  <Assignment character_id="darkspear_shadow_priest" class="Priest" />
+  <Assignment character_id="lord_5_15" class="Priest" />
+  <Assignment character_id="lord_5_17" class="Priest" />
+  <Assignment character_id="lord_7_19" class="Priest" />
+
+  <Assignment character_id="Gurubashi_Shaman" class="Shaman" />
+  <Assignment character_id="Blackrock_shaman" class="Shaman" />
+  <Assignment character_id="wh_Shaman_of_thunderstrike" class="Shaman" />
+  <Assignment character_id="wh_great_shaman" class="Shaman" />
+  <Assignment character_id="kaldorei_druid_of_the_talon" class="Shaman" />
+  <Assignment character_id="kaldorei_druid_of_the_claw" class="Shaman" />
+
+  <Assignment character_id="felhorde_warlock" class="Warlock" />
+  <Assignment character_id="felhorde_eredar_warlock" class="Warlock" />
+  <Assignment character_id="scourge_lich" class="Warlock" />
+</MagicAssignments>

@@ -1,0 +1,158 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Version>0.0.1</Version>
+    <TargetFramework>net472</TargetFramework>
+    <Platforms>x64</Platforms>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <LangVersion>10.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <BuildForWindows>false</BuildForWindows>
+    <BuildForWindowsStore>false</BuildForWindowsStore>
+    <ModuleId>$(MSBuildProjectName)</ModuleId>
+    <ModuleName>$(MSBuildProjectName)</ModuleName>
+    <ModuleUrl></ModuleUrl>
+    <GameFolder>C:\Program Files (x86)\Steam\steamapps\common\Mount &amp; Blade II Bannerlord</GameFolder>
+    <GameBinariesFolder>Win64_Shipping_Client</GameBinariesFolder>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net472'">
+    <BuildForWindows>true</BuildForWindows>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <Reference Include="NavalDLC">
+      <HintPath>$(GameFolder)\Modules\NavalDLC\bin\$(GameBinariesFolder)\NavalDLC.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.Core">
+      <HintPath>$(GameFolder)\bin\$(GameBinariesFolder)\TaleWorlds.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.Core.ViewModelCollection">
+      <HintPath>$(GameFolder)\bin\$(GameBinariesFolder)\TaleWorlds.Core.ViewModelCollection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.Library">
+      <HintPath>$(GameFolder)\bin\$(GameBinariesFolder)\TaleWorlds.Library.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.Localization">
+      <HintPath>$(GameFolder)\bin\$(GameBinariesFolder)\TaleWorlds.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.MountAndBlade">
+      <HintPath>$(GameFolder)\bin\$(GameBinariesFolder)\TaleWorlds.MountAndBlade.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.ModuleManager">
+      <HintPath>$(GameFolder)\bin\$(GameBinariesFolder)\TaleWorlds.ModuleManager.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.CampaignSystem">
+      <HintPath>$(GameFolder)\bin\$(GameBinariesFolder)\TaleWorlds.CampaignSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.Engine">
+      <HintPath>$(GameFolder)\bin\$(GameBinariesFolder)\TaleWorlds.Engine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>$(GameFolder)\bin\$(GameBinariesFolder)\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SandBox">
+      <HintPath>$(GameFolder)\Modules\SandBox\bin\$(GameBinariesFolder)\SandBox.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SandBox.View">
+      <HintPath>$(GameFolder)\Modules\SandBox\bin\$(GameBinariesFolder)\SandBox.View.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="StoryMode">
+      <HintPath>$(GameFolder)\Modules\StoryMode\bin\$(GameBinariesFolder)\StoryMode.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.MountAndBlade.GauntletUI">
+      <HintPath>$(GameFolder)\Modules\Native\bin\$(GameBinariesFolder)\TaleWorlds.MountAndBlade.GauntletUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.Engine.GauntletUI">
+      <HintPath>$(GameFolder)\bin\$(GameBinariesFolder)\TaleWorlds.Engine.GauntletUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.GauntletUI">
+      <HintPath>$(GameFolder)\bin\$(GameBinariesFolder)\TaleWorlds.GauntletUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.GauntletUI.Data">
+      <HintPath>$(GameFolder)\bin\$(GameBinariesFolder)\TaleWorlds.GauntletUI.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.ScreenSystem">
+      <HintPath>$(GameFolder)\bin\$(GameBinariesFolder)\TaleWorlds.ScreenSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.MountAndBlade.View">
+      <HintPath>$(GameFolder)\Modules\Native\bin\$(GameBinariesFolder)\TaleWorlds.MountAndBlade.View.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.MountAndBlade.ViewModelCollection">
+      <HintPath>$(GameFolder)\bin\$(GameBinariesFolder)\TaleWorlds.MountAndBlade.ViewModelCollection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.ObjectSystem">
+      <HintPath>$(GameFolder)\bin\$(GameBinariesFolder)\TaleWorlds.ObjectSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SandBox.GauntletUI">
+      <HintPath>$(GameFolder)\Modules\SandBox\bin\$(GameBinariesFolder)\SandBox.GauntletUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.CampaignSystem.ViewModelCollection">
+      <HintPath>$(GameFolder)\bin\$(GameBinariesFolder)\TaleWorlds.CampaignSystem.ViewModelCollection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.InputSystem">
+      <HintPath>$(GameFolder)\bin\$(GameBinariesFolder)\TaleWorlds.InputSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.SaveSystem">
+      <HintPath>$(GameFolder)\bin\$(GameBinariesFolder)\TaleWorlds.SaveSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+     <Reference Include="TaleWorlds.DotNet">
+       <HintPath>$(GameFolder)\bin\$(GameBinariesFolder)\TaleWorlds.DotNet.dll</HintPath>
+       <Private>false</Private>
+     </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Nullable" Version="1.3.1" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+    <PackageReference Include="IsExternalInit" Version="1.0.3" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+    <PackageReference Include="Bannerlord.BuildResources" Version="1.1.0.124" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+    <PackageReference Include="Lib.Harmony" Version="2.3.3" />
+    <PackageReference Include="Harmony.Extensions" Version="3.2.0.77" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+    <PackageReference Include="BUTR.Harmony.Analyzer" Version="1.0.1.50" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="_Module\\**\\*;ModuleData\\**\\*;Prefabs\\**\\*;Music\\**\\*;Videos\\**\\*;GUI\\**\\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <NaturalWeaponXsltFiles Include="ModuleData\XSLT\**\*.*" />
+  </ItemGroup>
+
+  <Target Name="CopyNaturalWeaponXsltToLiveModule" AfterTargets="Build"
+          Condition="'@(NaturalWeaponXsltFiles)' != '' and Exists('$(GameFolder)\Modules\$(ModuleId)')">
+    <MakeDir Directories="$(GameFolder)\Modules\$(ModuleId)\ModuleData\XSLT" />
+    <Copy SourceFiles="@(NaturalWeaponXsltFiles)"
+          DestinationFiles="@(NaturalWeaponXsltFiles->'$(GameFolder)\Modules\$(ModuleId)\ModuleData\XSLT\%(RecursiveDir)%(Filename)%(Extension)')"
+          SkipUnchangedFiles="true" />
+  </Target>
+
+</Project>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MagicClasses>
+  <Class id="Mage"
+         base_max_mana="120"
+         mana_regen_per_hour="10"
+         mission_troop_mana="90"
+         starter_spell_ids="mage_fireball;mage_arcane_explosion"
+         default_selected_spell_ids="mage_fireball;mage_arcane_explosion" />
+  <Class id="Priest"
+         base_max_mana="110"
+         mana_regen_per_hour="9"
+         mission_troop_mana="80"
+         starter_spell_ids="priest_smite;priest_holy_light"
+         default_selected_spell_ids="priest_smite;priest_holy_light" />
+  <Class id="Shaman"
+         base_max_mana="115"
+         mana_regen_per_hour="9"
+         mission_troop_mana="85"
+         starter_spell_ids="shaman_lightning_bolt;shaman_healing_wave"
+         default_selected_spell_ids="shaman_lightning_bolt;shaman_healing_wave" />
+  <Class id="Warlock"
+         base_max_mana="125"
+         mana_regen_per_hour="8"
+         mission_troop_mana="95"
+         starter_spell_ids="warlock_shadow_bolt;warlock_drain_life"
+         default_selected_spell_ids="warlock_shadow_bolt;warlock_drain_life" />
+</MagicClasses>

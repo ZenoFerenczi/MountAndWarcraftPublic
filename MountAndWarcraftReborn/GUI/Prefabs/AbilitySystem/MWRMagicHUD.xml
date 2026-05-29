@@ -1,0 +1,56 @@
+<Prefab>
+  <Window>
+    <Widget WidthSizePolicy="Fixed"
+            HeightSizePolicy="Fixed"
+            SuggestedWidth="260"
+            SuggestedHeight="136"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Bottom"
+            MarginLeft="20"
+            MarginBottom="120"
+            IsVisible="@IsVisible">
+      <Children>
+        <Widget WidthSizePolicy="StretchToParent"
+                HeightSizePolicy="StretchToParent"
+                Sprite="BlankWhiteSquare_9"
+                Color="#AA101820">
+          <Children>
+            <TextWidget WidthSizePolicy="CoverChildren"
+                        HeightSizePolicy="CoverChildren"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        MarginLeft="12"
+                        MarginTop="12"
+                        Text="@SelectedSpellName"
+                        Brush.FontSize="18" />
+            <TextWidget WidthSizePolicy="CoverChildren"
+                        HeightSizePolicy="CoverChildren"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        MarginLeft="12"
+                        MarginTop="36"
+                        Text="@SelectedSpellMeta"
+                        Brush.FontSize="15" />
+            <TextWidget WidthSizePolicy="CoverChildren"
+                        HeightSizePolicy="CoverChildren"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        MarginLeft="12"
+                        MarginTop="60"
+                        Text="@ManaText"
+                        Brush.FontSize="20" />
+            <TextWidget WidthSizePolicy="StretchToParent"
+                        HeightSizePolicy="CoverChildren"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Bottom"
+                        MarginLeft="12"
+                        MarginRight="12"
+                        MarginBottom="12"
+                        Text="@StatusText"
+                        Brush.FontSize="13" />
+          </Children>
+        </Widget>
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>
