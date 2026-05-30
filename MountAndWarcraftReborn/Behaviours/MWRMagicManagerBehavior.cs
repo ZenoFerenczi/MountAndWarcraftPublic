@@ -13,7 +13,7 @@ namespace MountAndWarcraftReborn.Behaviors
     public class MWRMagicManagerBehavior : CampaignBehaviorBase
     {
         private const int MaxSelectedSpells = 4;
-        private const bool EnableMainHeroCharacterCreationMagicSelection = false;
+        private const bool EnableMainHeroCharacterCreationMagicSelection = true;
 
         private Dictionary<string, MWRMagicInfo> _heroMagicInfos = new(StringComparer.Ordinal);
 

@@ -9,7 +9,7 @@ namespace MWRMode.Patches.CharacterCreation
     [HarmonyPatch(typeof(CharacterCreationCampaignBehavior), nameof(CharacterCreationCampaignBehavior.InitializeData))]
     public static class MWRCharacterCreationInitPatch
     {
-        private const bool EnablePlayerMagicSelectionMenu = false;
+        private const bool EnablePlayerMagicSelectionMenu = true;
 
         [HarmonyPrefix]
         private static bool Prefix(CharacterCreationManager characterCreationManager)
